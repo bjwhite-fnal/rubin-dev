@@ -4,5 +4,6 @@
 docker run \
     -v ${PWD}/dev:/home/lsst/dev \
     -d \
+    -it \
     --name ${USER}-rubin-dev \
     rubin-dev
