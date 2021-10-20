@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Build the Rubin Data Management Development Container
-docker build -t rubin-dev dev
+docker build -t rubin-dev docker
