@@ -1,4 +1,14 @@
 # Brandon White
 # Rubin Data Management Dev Environment
 
-FROM lsstsqre/centos:7-stack-lsst_distrib-v22_0_0
+# For now just use the LSST Science Pipelines image,
+# because it probably gets us close to the standard software
+FROM lsstsqre/centos:d_latest
+
+USER root
+RUN yum -y update && \
+    yum -y upgrade && \
+    yum install -y \
+        which
+
+USER lsst
